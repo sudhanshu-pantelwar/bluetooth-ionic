@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      HC 05
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4 padding id="p1">Status Disconnected</h4>
+  <div style="padding-left: 30%; padding-top:40px;">
+    <button ion-button small style="margin-left: 18%" (click)="sendCommand('up')" color="danger">UP</button><br>
+    <button ion-button small (click)="sendCommand('left')" color="danger">LEFT</button>
+    <button ion-button small (click)="sendCommand('right')" color="danger">RIGHT</button><br>
+    <button ion-button small style="margin-left: 15%" (click)="sendCommand('down')" color="danger">DOWN</button>
+  </div>
+  <div style="Padding-top: 100px"></div>
+  <button ion-button full (click)="communications()">Connect</button>
+</ion-content>
